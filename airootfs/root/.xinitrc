@@ -1,0 +1,2 @@
+fbpanel &
+exec openbox-session
