@@ -15,5 +15,7 @@ clean:
 $(ISO): $(SOURCES) releng/build.sh
 	cp -r config/* releng/ ; cd releng ; rm -f work/build.make_* ; ./build.sh -v ; cd -
 
-print:
-	echo $(ISO) $(SOURCES)
+usbstick: $(ISO)
+	mkdir -p usbstick/arch/boot ; \
+	cp -r releng/work/iso/arch/x86_64 usbstick/arch/ ; \
+	cp -r releng/work/iso/arch/boot/x86_64 usbstick/arch/boot/
