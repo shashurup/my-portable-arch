@@ -62,6 +62,7 @@ pptpclient
 refind-efi
 rfkill
 rlwrap
+rofi
 rp-pppoe
 rsync
 sdparm
