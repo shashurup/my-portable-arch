@@ -13,7 +13,7 @@ clean:
 	rm -rf releng
 
 $(ISO): $(SOURCES) releng/build.sh
-	cp -r config/* releng/ ; cd releng ; rm -f work/build.make_* ; ./build.sh -v ; cd -
+	cp -r config/* releng/ ; cp /etc/pacman.conf releng/ ; cd releng ; rm -f work/build.make_* ; ./build.sh -v ; cd -
 
 usbstick: $(ISO)
 	mkdir -p usbstick/arch/boot ; \

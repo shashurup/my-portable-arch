@@ -2,6 +2,7 @@ alsa-utils
 arch-install-scripts
 archlinux-xdg-menu
 b43-fwcutter
+broadcom-wl
 btrfs-progs
 chromium
 clonezilla
@@ -36,6 +37,7 @@ ipw2100-fw
 ipw2200-fw
 ipython
 irssi
+ifplugd
 lftp
 linux-atm
 lshw
@@ -69,7 +71,6 @@ sdparm
 sg3_utils
 slock
 smartmontools
-speedtouch
 sudo
 tcpdump
 termite
@@ -85,7 +86,9 @@ vpnc
 wget
 wicd
 wicd-gtk
-wpa_actiond
+wireless-regdb
+wireless_tools
+wvdial
 openbox
 xl2tpd
 xf86-video-amdgpu
@@ -97,4 +100,3 @@ xf86-video-vesa
 xorg-server
 xorg-xinit
 xorg-xrandr
-zd1211-firmware
