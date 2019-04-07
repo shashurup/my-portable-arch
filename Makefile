@@ -13,7 +13,11 @@ clean:
 	rm -rf releng
 
 $(ISO): $(SOURCES) releng/build.sh
-	cp -r config/* releng/ ; cp /etc/pacman.conf releng/ ; cd releng ; rm -f work/build.make_* ; ./build.sh -v ; cd -
+	cp -r config/* releng/
+	cp /etc/pacman.conf releng/
+	echo 'MODULES=(i915 amdgpu nouveau)' >> releng/mkinitcpio.conf
+	rm -f releng/work/build.make_*
+	cd releng ; ./build.sh -v ; cd -
 
 usbstick: $(ISO)
 	mkdir -p usbstick/arch/boot ; \
